@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:booksdbTests
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    defer-datasource-initialization: true  # Ensure data.sql runs after schema creation
+    hibernate:
+      ddl-auto: update   # Auto-create tables
+  h2:
+    console:
+      enabled: true
