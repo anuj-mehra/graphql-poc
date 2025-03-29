@@ -20,8 +20,11 @@
 
     <properties>
         <java.version>11</java.version>
-        <graphql-java.version>20.5</graphql-java.version>
+        <graphql-java.version>16.2</graphql-java.version>
         <graphql-java-kickstart.version>11.1.0</graphql-java-kickstart.version>
+        <!--<java.version>11</java.version>
+        <graphql-java.version>20.5</graphql-java.version>
+        <graphql-java-kickstart.version>11.1.0</graphql-java-kickstart.version>-->
     </properties>
 
     <dependencies>
