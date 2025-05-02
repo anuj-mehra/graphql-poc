@@ -1,5 +1,5 @@
 type Book {
-    id: ID
+    id: Long
     title: String
     author: String
     pages: Int
@@ -7,7 +7,7 @@ type Book {
 
 type Query {
     getAllBooks: [Book]
-    getBookById(id: ID!): Book
+    getBookById(id: Long): Book
 }
 
 type Mutation {

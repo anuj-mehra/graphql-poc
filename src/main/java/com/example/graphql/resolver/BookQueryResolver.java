@@ -14,16 +14,19 @@ public class BookQueryResolver {
     private final BookRepository bookRepository;
 
     public BookQueryResolver(BookRepository bookRepository) {
+
         this.bookRepository = bookRepository;
     }
 
     @QueryMapping  // Replaces GraphQLQueryResolver
     public List<Book> getAllBooks() {
+
         return bookRepository.findAll();
     }
 
     @QueryMapping  // Replaces GraphQLQueryResolver
     public Optional<Book> getBookById(Long id) {
+
         return bookRepository.findById(id);
     }
 }
