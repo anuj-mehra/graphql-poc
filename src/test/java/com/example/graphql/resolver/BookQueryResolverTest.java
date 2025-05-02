@@ -26,7 +26,7 @@ class BookQueryResolverTest {
     }
 
     @Test
-    void testGetUsers() {
+    void testAllBooksTest() {
         String query = "{\n" +
                 "                getAllBooks {\n" +
                 "                    firstName\n" +
@@ -36,7 +36,7 @@ class BookQueryResolverTest {
 
         graphQlTester.document(query)
                 .execute()
-                .path("getUsers")
+                .path("getAllBooks")
                 .entityList(Book.class)
                 .hasSize(2)
                 .contains(new Book() {{
